@@ -8,8 +8,7 @@ O projeto foi adaptado para rodar tanto em ambiente local quanto no **Google Col
 
 ## Estrutura do Repositório
 
-´´´
-
+```
 project-root/
 │
 ├─ dados/ # Arquivos numpy (.npy) com os sinais e labels
@@ -24,5 +23,4 @@ project-root/
 │
 ├─ app.py # Script principal Flask
 ├─ requirements.txt # Dependências Python
-└─ README.md
-´´´
+└─ README.md```
