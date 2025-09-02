@@ -8,7 +8,7 @@ O projeto foi adaptado para rodar tanto em ambiente local quanto no **Google Col
 
 ## Estrutura do Repositório
 
-´´´text
+´´´
 
 project-root/
 │
