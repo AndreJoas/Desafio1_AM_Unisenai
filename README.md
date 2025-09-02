@@ -26,6 +26,7 @@ project-root/
 └─ README.md```
 
 ## Criar e ativar ambiente virtual
+
 ```
 python -m venv venv
 # Windows
@@ -33,11 +34,15 @@ venv\Scripts\activate
 # Linux / MacOS
 source venv/bin/activate
 ```
+
 ## Instalar dependências
+
 ```
 pip install -r requirements.txt
 ```
+
 ## Rodar a aplicação Flask
+
 ```
 python app.py
 ```
