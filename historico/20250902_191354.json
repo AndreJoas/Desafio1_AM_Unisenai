@@ -1,0 +1,120 @@
+{
+    "timestamp": "2025-09-02 19:14:48",
+    "resultados": {
+        "SVM": {
+            "best_params": {
+                "C": 1.2955134892703453,
+                "gamma": 0.3154888634407671,
+                "kernel": "sigmoid"
+            },
+            "best_score_cv": 0.88,
+            "classification_report": {
+                "0": {
+                    "precision": 0.9354838709677419,
+                    "recall": 0.725,
+                    "f1-score": 0.8169014084507042,
+                    "support": 40.0
+                },
+                "1": {
+                    "precision": 0.7755102040816326,
+                    "recall": 0.95,
+                    "f1-score": 0.8539325842696629,
+                    "support": 40.0
+                },
+                "2": {
+                    "precision": 0.7674418604651163,
+                    "recall": 0.825,
+                    "f1-score": 0.7951807228915663,
+                    "support": 40.0
+                },
+                "3": {
+                    "precision": 1.0,
+                    "recall": 0.9,
+                    "f1-score": 0.9473684210526315,
+                    "support": 40.0
+                },
+                "4": {
+                    "precision": 0.8292682926829268,
+                    "recall": 0.85,
+                    "f1-score": 0.8395061728395061,
+                    "support": 40.0
+                },
+                "accuracy": 0.85,
+                "macro avg": {
+                    "precision": 0.8615408456394835,
+                    "recall": 0.85,
+                    "f1-score": 0.8505778619008142,
+                    "support": 200.0
+                },
+                "weighted avg": {
+                    "precision": 0.8615408456394834,
+                    "recall": 0.85,
+                    "f1-score": 0.8505778619008143,
+                    "support": 200.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    29,
+                    11,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    2,
+                    38,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    33,
+                    0,
+                    7
+                ],
+                [
+                    0,
+                    0,
+                    4,
+                    36,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    6,
+                    0,
+                    34
+                ]
+            ]
+        }
+    },
+    "meta": {
+        "plots": {
+            "pca_2d": "images/20250902_191354/pca_2d.png",
+            "pca_3d": "images/20250902_191354/pca_3d.html",
+            "accuracies": "images/20250902_191354/model_accuracies.png",
+            "confusions": {
+                "SVM": "images/20250902_191354/confusion_SVM.png"
+            }
+        },
+        "params": {
+            "bloco": 50,
+            "n_trials": 9
+        }
+    },
+    "detalhes": {
+        "bloco": 50,
+        "n_trials": 9,
+        "model_params": {
+            "SVM": {
+                "C": 1.2955134892703453,
+                "gamma": 0.3154888634407671,
+                "kernel": "sigmoid"
+            }
+        }
+    }
+}

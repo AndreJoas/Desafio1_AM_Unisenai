@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Histórico</title>
+</head>
+
+<body>
+    <h2>Histórico de Execuções</h2>
+    <ul>
+        {% for h in historicos %}
+        <li>
+            <a href="{{ url_for('results', hid=h.id) }}">{{ h.timestamp }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <p><a href="{{ url_for('index') }}">← Voltar</a></p>
+</body>
+
+</html>

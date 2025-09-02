@@ -1,0 +1,220 @@
+{
+    "timestamp": "2025-09-02 18:32:33",
+    "resultados": {
+        "SVM": {
+            "best_params": {
+                "C": 0.014332998372469295,
+                "gamma": 1.5730883277430996,
+                "kernel": "sigmoid"
+            },
+            "best_score_cv": 0.9241741741741742,
+            "classification_report": {
+                "0": {
+                    "precision": 1.0,
+                    "recall": 0.8208955223880597,
+                    "f1-score": 0.9016393442622951,
+                    "support": 67.0
+                },
+                "1": {
+                    "precision": 0.8461538461538461,
+                    "recall": 1.0,
+                    "f1-score": 0.9166666666666666,
+                    "support": 66.0
+                },
+                "2": {
+                    "precision": 0.9710144927536232,
+                    "recall": 1.0,
+                    "f1-score": 0.9852941176470589,
+                    "support": 67.0
+                },
+                "3": {
+                    "precision": 1.0,
+                    "recall": 0.9850746268656716,
+                    "f1-score": 0.9924812030075187,
+                    "support": 67.0
+                },
+                "4": {
+                    "precision": 1.0,
+                    "recall": 0.9848484848484849,
+                    "f1-score": 0.9923664122137404,
+                    "support": 66.0
+                },
+                "accuracy": 0.9579579579579579,
+                "macro avg": {
+                    "precision": 0.963433667781494,
+                    "recall": 0.9581637268204432,
+                    "f1-score": 0.9576895487594559,
+                    "support": 333.0
+                },
+                "weighted avg": {
+                    "precision": 0.9636760506325722,
+                    "recall": 0.9579579579579579,
+                    "f1-score": 0.9577086058724844,
+                    "support": 333.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    55,
+                    12,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    66,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    67,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1,
+                    66,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    65
+                ]
+            ]
+        },
+        "KNN": {
+            "best_params": {
+                "n_neighbors": 69,
+                "weights": "distance",
+                "leaf_size": 52,
+                "p": 1,
+                "metric": "cosine"
+            },
+            "best_score_cv": 0.9932349641036128,
+            "classification_report": {
+                "0": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 67.0
+                },
+                "1": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 66.0
+                },
+                "2": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 67.0
+                },
+                "3": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 67.0
+                },
+                "4": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 66.0
+                },
+                "accuracy": 1.0,
+                "macro avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 333.0
+                },
+                "weighted avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 333.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    67,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    66,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    67,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    67,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    66
+                ]
+            ]
+        }
+    },
+    "meta": {
+        "plots": {
+            "pca_2d": "images/20250902_183052/pca_2d.png",
+            "pca_3d": "images/20250902_183052/pca_3d.html",
+            "accuracies": "images/20250902_183052/model_accuracies.png",
+            "confusions": {
+                "SVM": "images/20250902_183052/confusion_SVM.png",
+                "KNN": "images/20250902_183052/confusion_KNN.png"
+            }
+        },
+        "params": {
+            "bloco": 30,
+            "n_trials": 9
+        }
+    },
+    "detalhes": {
+        "bloco": 30,
+        "n_trials": 9,
+        "model_params": {
+            "SVM": {
+                "C": 0.014332998372469295,
+                "gamma": 1.5730883277430996,
+                "kernel": "sigmoid"
+            },
+            "KNN": {
+                "n_neighbors": 69,
+                "weights": "distance",
+                "leaf_size": 52,
+                "p": 1,
+                "metric": "cosine"
+            }
+        }
+    }
+}

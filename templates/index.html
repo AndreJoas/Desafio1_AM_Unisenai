@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pipeline FFT + Optuna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* ===== Reset e body ===== */
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        /* ===== Container ===== */
+        
+        .container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+        /* ===== Form ===== */
+        
+        form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #34495e;
+        }
+        
+        input[type="number"] {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.2s;
+        }
+        
+        input[type="number"]:focus {
+            border-color: #2980b9;
+            outline: none;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px 0;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #2980b9;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        button:hover {
+            background: #1c5980;
+        }
+        
+        .note {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .note ul {
+            margin-top: 6px;
+            padding-left: 20px;
+        }
+        /* Link do histórico */
+        
+        .historico-btn {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+        
+        .historico-btn button {
+            background: #27ae60;
+        }
+        
+        .historico-btn button:hover {
+            background: #1e8449;
+        }
+        
+        code {
+            background: #ecf0f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Executar Pipeline: FFT + Optuna</h2>
+        <form action="{{ url_for('run_pipeline') }}" method="post">
+            <label for="bloco">Número de blocos (bloco):</label>
+            <input type="number" id="bloco" name="bloco" value="50" min="1" required>
+
+            <label for="n_trials">Número de trials do Optuna (n_trials):</label>
+            <input type="number" id="n_trials" name="n_trials" value="5" min="1" required>
+
+            <button type="submit"> Iniciar Pipeline</button>
+        </form>
+
+        <a class="historico-btn" href="{{ url_for('historico') }}">
+            <button type="button">Ver Histórico</button>
+        </a>
+
+        <p class="note">
+            Observações:
+            <ul>
+
+                <li>Quando o processo terminar você verá um botão para ir à página de resultados.</li>
+            </ul>
+        </p>
+    </div>
+</body>
+
+</html>
