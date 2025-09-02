@@ -8,7 +8,7 @@ O projeto foi adaptado para rodar tanto em ambiente local quanto no **Google Col
 
 ## Estrutura do Repositório
 
-'''text
+´´´text
 
 project-root/
 │
@@ -25,4 +25,4 @@ project-root/
 ├─ app.py # Script principal Flask
 ├─ requirements.txt # Dependências Python
 └─ README.md
-'''
+´´´
