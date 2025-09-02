@@ -24,3 +24,20 @@ project-root/
 ├─ app.py # Script principal Flask
 ├─ requirements.txt # Dependências Python
 └─ README.md```
+
+## Criar e ativar ambiente virtual
+```
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# Linux / MacOS
+source venv/bin/activate
+```
+## Instalar dependências
+```
+pip install -r requirements.txt
+```
+## Rodar a aplicação Flask
+```
+python app.py
+```
